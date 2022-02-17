@@ -14,9 +14,9 @@
 package mock
 
 import (
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/config"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/interfaces"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/message"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/config"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/interfaces"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/message"
 	logInterface "github.com/project-alvarium/provider-logging/pkg/interfaces"
 )
 

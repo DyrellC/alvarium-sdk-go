@@ -16,7 +16,7 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/contracts"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/contracts"
 )
 
 type SignatureInfo struct {

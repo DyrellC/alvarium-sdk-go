@@ -16,8 +16,8 @@ package annotators
 import (
 	"context"
 	"encoding/json"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/config"
-	"github.com/project-alvarium/alvarium-sdk-go/test"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/config"
+	"github.com/dyrellc/alvarium-sdk-go/test"
 	"io/ioutil"
 	"testing"
 )

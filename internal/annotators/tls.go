@@ -5,9 +5,9 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/config"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/contracts"
-	"github.com/project-alvarium/alvarium-sdk-go/pkg/interfaces"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/config"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/contracts"
+	"github.com/dyrellc/alvarium-sdk-go/pkg/interfaces"
 	"os"
 )
 
