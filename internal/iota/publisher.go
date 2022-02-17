@@ -71,13 +71,13 @@ func (p *iotaPublisher) Connect() error {
 	p.logger.Write(logging.DebugLevel, fmt.Sprintf("transport established %s", p.cfg.TangleNode.Uri()))
 
 	// Generate Subscriber instance
-	cErr := C.sub_new(&p.subscriber, C.CString(p.seed), C.CString(p.cfg.Encoding), payloadLength, transport)
+	cErr := C.sub_new(&p.subscriber, C.CString(p.seed), transport)
 	p.logger.Write(logging.DebugLevel, fmt.Sprintf(get_error(cErr)))
 	p.logger.Write(logging.DebugLevel, fmt.Sprintf("subscriber established seed=%s", p.seed))
 
 	// Process announcement message
 	rawId, err := p.getAnnouncementId(p.cfg.Provider.Uri())
-	p.logger.Write(logging.DebugLevel, fmt.Sprintf("Got announcement"))
+	p.logger.Write(logging.DebugLevel, fmt.Sprintf("Got announcement, %s", rawId))
 	if err != nil {
 		return err
 	}
