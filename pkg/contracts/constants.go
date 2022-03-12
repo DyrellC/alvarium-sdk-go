@@ -64,10 +64,11 @@ const (
 	AnnotationSource AnnotationType = "src"
 	AnnotationTLS    AnnotationType = "tls"
 	AnnotationTPM    AnnotationType = "tpm"
+	AnnotationAuto   AnnotationType = "auto"
 )
 
 func (t AnnotationType) Validate() bool {
-	if t == AnnotationPKI || t == AnnotationTLS || t == AnnotationTPM || t == AnnotationSource {
+	if t == AnnotationPKI || t == AnnotationTLS || t == AnnotationTPM || t == AnnotationSource || t == AnnotationAuto {
 		return true
 	}
 	return false

@@ -61,6 +61,8 @@ func NewAnnotator(kind contracts.AnnotationType, cfg config.SdkInfo) (interfaces
 		a = annotators.NewPkiAnnotator(cfg)
 	case contracts.AnnotationTLS:
 		a = annotators.NewTlsAnnotator(cfg)
+	case contracts.AnnotationAuto:
+		a = annotators.NewAutomationAnnotator(cfg)
 	default:
 		return nil, fmt.Errorf("unrecognized AnnotationType %s", kind)
 	}
